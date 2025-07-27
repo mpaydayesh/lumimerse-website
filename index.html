@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LumiMerse - Build. Train. Deploy.</title>
+    <meta name="description" content="Your end-to-end sim-to-real AI robotics platform.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">LumiMerse</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#platform">Platform</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <section class="hero" id="home">
+        <video autoplay loop muted playsinline class="hero-video" preload="auto">
+            <source src="assets/videos/rover-demo.mp4" type="video/mp4">
+            <!-- Fallback for browsers that don't support video -->
+            <div class="video-fallback">
+                <img src="assets/images/rover-hero.jpg" alt="LumiMerse Rover" class="fallback-image">
+            </div>
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Build. Train. Deploy.</h1>
+            <p>Your end-to-end sim-to-real AI robotics platform.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Get Started</a>
+                <a href="#demo" class="btn btn-secondary">Watch Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky CTA Bar -->
+    <div class="sticky-cta" id="stickyCTA">
+        <p>Ready to build your AI robot?</p>
+        <a href="#pricing" class="btn">Get Started</a>
+    </div>
+
+    <!-- Platform Overview -->
+    <section class="reveal">
+        <div class="container">
+            <div class="two-column">
+                <div class="content-block">
+                    <h3>One Platform.<br>Endless Possibilities.</h3>
+                    <p>LumiMerse brings professional-grade robotics development to everyone. From students to researchers, from hobbyists to enterprises.</p>
+                    <ul class="feature-list">
+                        <li>Train AI models in photorealistic simulations</li>
+                        <li>Deploy seamlessly to real hardware</li>
+                        <li>Monitor and iterate in real-time</li>
+                    </ul>
+                    <a href="#platform" class="btn btn-primary">Explore Platform</a>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/platform-devices.svg" alt="LumiMerse Platform" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="reveal" style="position: relative;">
+        <div class="circuit-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Capabilities</h2>
+                <p class="section-subtitle">Everything you need to build next-generation AI robotics</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                    </div>
+                    <h4>Simulate</h4>
+                    <p>Train RL models in physics-accurate environments with cloud compute support</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                            <line x1="9" y1="9" x2="15" y2="15"></line>
+                            <line x1="15" y1="9" x2="9" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h4>Train</h4>
+                    <p>State-of-the-art reinforcement learning algorithms optimized for robotics</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h4>Deploy</h4>
+                    <p>One-click deployment to edge devices with hardware acceleration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects reveal" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Project</h2>
+                <p class="section-subtitle">Start with our flagship kits or create something entirely new</p>
+            </div>
+            <div class="project-cards">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/rover-hero.svg" alt="AI Autonomous Rover" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Autonomous Rover</h3>
+                        <span class="project-status status-available">Available Now</span>
+                        <p>4WD autonomous vehicle with computer vision and RL-based navigation. Perfect for beginners and educators.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/robotic-arm.svg" alt="6-DOF Robotic Arm" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>6-DOF Robotic Arm</h3>
+                        <span class="project-status status-coming">Coming Q2 2024</span>
+                        <p>Precision robotic arm with AI-powered object manipulation and sorting capabilities.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/drone.svg" alt="Autonomous Drone" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Autonomous Drone</h3>
+                        <span class="project-status status-coming">Coming Q3 2024</span>
+                        <p>AI-powered quadcopter with advanced flight control and computer vision navigation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Features Section -->
+    <section class="platform-features reveal" id="platform">
+        <div class="container">
+            <div class="two-column">
+                <div class="content-block">
+                    <h2>From Simulation to Reality</h2>
+                    <p>Our platform makes it simple to go from idea to working robot in days, not months.</p>
+                    <ul class="feature-list">
+                        <li>Pre-built simulation environments</li>
+                        <li>Hardware-optimized inference</li>
+                        <li>Real-time monitoring dashboard</li>
+                        <li>OTA updates and versioning</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="image-container">
+                    <div class="platform-icon">
+                        <svg viewBox="0 0 100 100" width="200" height="200">
+                            <rect x="10" y="20" width="80" height="50" rx="5" fill="#00d4ff" opacity="0.2"/>
+                            <rect x="15" y="25" width="70" height="40" rx="3" fill="#00d4ff" opacity="0.4"/>
+                            <rect x="20" y="30" width="60" height="30" rx="2" fill="#00d4ff"/>
+                            <circle cx="30" cy="45" r="3" fill="white"/>
+                            <circle cx="40" cy="45" r="3" fill="white"/>
+                            <circle cx="50" cy="45" r="3" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compatibility Section -->
+    <section class="compatibility reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Universal Compatibility</h2>
+                <p class="section-subtitle">Works with all major edge computing platforms</p>
+            </div>
+            <div class="two-column">
+                <div class="content-block">
+                    <h3>Any Hardware.<br>One Platform.</h3>
+                    <p>Whether you're using a Raspberry Pi for education or NVIDIA Jetson for research, LumiMerse adapts to your needs.</p>
+                    <ul class="feature-list">
+                        <li>Raspberry Pi 4/5</li>
+                        <li>NVIDIA Jetson Nano/Orin</li>
+                        <li>Intel NUC</li>
+                        <li>Qualcomm RB5</li>
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <div class="hardware-icon">
+                        <svg viewBox="0 0 100 100" width="200" height="200">
+                            <rect x="20" y="30" width="60" height="40" rx="5" fill="#00d4ff" opacity="0.3"/>
+                            <rect x="25" y="35" width="50" height="30" rx="3" fill="#00d4ff" opacity="0.6"/>
+                            <rect x="30" y="40" width="40" height="20" rx="2" fill="#00d4ff"/>
+                            <line x1="35" y1="45" x2="65" y2="45" stroke="white" stroke-width="2"/>
+                            <line x1="35" y1="50" x2="55" y2="50" stroke="white" stroke-width="2"/>
+                            <line x1="35" y1="55" x2="60" y2="55" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing reveal" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple Pricing</h2>
+                <p class="section-subtitle">Choose the plan that fits your needs</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price">
+                        <span class="currency">£</span>
+                        <span class="amount">199</span>
+                    </div>
+                    <p class="plan-description">Perfect for beginners</p>
+                    <ul class="features">
+                        <li>1 project kit</li>
+                        <li>Basic compute module</li>
+                        <li>Community support</li>
+                        <li>Documentation access</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Professional</h3>
+                    <div class="price">
+                        <span class="currency">£</span>
+                        <span class="amount">449</span>
+                    </div>
+                    <p class="plan-description">For serious builders</p>
+                    <ul class="features">
+                        <li>All project kits</li>
+                        <li>Advanced compute</li>
+                        <li>Priority support</li>
+                        <li>Cloud training</li>
+                        <li>Commercial license</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Go Pro</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">
+                        <span class="currency">£</span>
+                        <span class="amount">POA</span>
+                    </div>
+                    <p class="plan-description">Custom solutions</p>
+                    <ul class="features">
+                        <li>Unlimited seats</li>
+                        <li>Private cloud</li>
+                        <li>SLA support</li>
+                        <li>Custom hardware</li>
+                        <li>Training workshops</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#">Documentation</a>
+                    <a href="#">Support</a>
+                    <a href="#">Blog</a>
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="footer-info">
+                    <p>© 2024 LumiMerse Ltd. All rights reserved.</p>
+                    <p>sales@lumimerse.com | +44 20 1234 5678</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Navbar active state
+        function updateActiveNav() {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollY = window.pageYOffset;
+
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 100;
+                const sectionId = section.getAttribute('id');
+                const navLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
+                
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-links a').forEach(link => link.classList.remove('active'));
+                    if (navLink) navLink.classList.add('active');
+                }
+            });
+        }
+
+        // Navbar scroll effect and sticky CTA
+        let lastScrollY = 0;
+        const navbar = document.getElementById('navbar');
+        const stickyCTA = document.getElementById('stickyCTA');
+        const heroHeight = document.querySelector('.hero').offsetHeight;
+
+        window.addEventListener('scroll', function() {
+            const scrollY = window.scrollY;
+            
+            // Navbar styling
+            if (scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            
+            // Sticky CTA visibility
+            if (scrollY > heroHeight && scrollY > lastScrollY) {
+                stickyCTA.classList.add('visible');
+            } else {
+                stickyCTA.classList.remove('visible');
+            }
+            
+            lastScrollY = scrollY;
+            updateActiveNav();
+        });
+
+        // Reveal animations on scroll
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        function reveal() {
+            revealElements.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        reveal();
+
+        // Parallax effect for hero overlay
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const overlay = document.querySelector('.hero-overlay');
+            if (overlay && scrolled < window.innerHeight) {
+                overlay.style.transform = `translateY(${scrolled * 0.3}px)`;
+            }
+        });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const spans = mobileMenu.querySelectorAll('span');
+            
+            mobileMenu.classList.toggle('active');
+            
+            if (mobileMenu.classList.contains('active')) {
+                spans[0].style.transform = 'rotate(45deg) translateY(7px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(-45deg) translateY(-7px)';
+                
+                // Create mobile nav
+                const mobileNav = document.createElement('div');
+                mobileNav.className = 'mobile-nav-active';
+                mobileNav.style.cssText = `
+                    position: fixed;
+                    top: 64px;
+                    left: 0;
+                    right: 0;
+                    background: rgba(255, 255, 255, 0.98);
+                    backdrop-filter: blur(20px);
+                    -webkit-backdrop-filter: blur(20px);
+                    padding: var(--space-md);
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                    display: flex;
+                    flex-direction: column;
+                    gap: var(--space-md);
+                    animation: slideDown 0.3s ease;
+                    z-index: 999;
+                `;
+                mobileNav.innerHTML = `
+                    <a href="#home" onclick="closeMobileMenu()" style="color: var(--dark-gray); text-decoration: none; padding: var(--space-sm) 0; font-weight: var(--font-weight-medium);">Home</a>
+                    <a href="#projects" onclick="closeMobileMenu()" style="color: var(--dark-gray); text-decoration: none; padding: var(--space-sm) 0; font-weight: var(--font-weight-medium);">Projects</a>
+                    <a href="#platform" onclick="closeMobileMenu()" style="color: var(--dark-gray); text-decoration: none; padding: var(--space-sm) 0; font-weight: var(--font-weight-medium);">Platform</a>
+                    <a href="#pricing" onclick="closeMobileMenu()" style="color: var(--dark-gray); text-decoration: none; padding: var(--space-sm) 0; font-weight: var(--font-weight-medium);">Pricing</a>
+                    <a href="#contact" onclick="closeMobileMenu()" style="color: var(--dark-gray); text-decoration: none; padding: var(--space-sm) 0; font-weight: var(--font-weight-medium);">Contact</a>
+                `;
+                document.querySelector('nav').appendChild(mobileNav);
+            } else {
+                closeMobileMenu();
+            }
+        }
+
+        function closeMobileMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const spans = mobileMenu.querySelectorAll('span');
+            
+            mobileMenu.classList.remove('active');
+            spans[0].style.transform = 'none';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = 'none';
+            
+            const mobileNav = document.querySelector('.mobile-nav-active');
+            if (mobileNav) {
+                mobileNav.remove();
+            }
+        }
+
+        // Add animation for mobile menu
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideDown {
+                from {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Button hover effects
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+
+        // Micro-interaction for feature cards
+        document.querySelectorAll('.feature-card, .project-card, .pricing-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transition = 'transform 0.2s ease';
+                this.style.transform = 'translateY(-5px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Fallback for video - create animated placeholder
+        const video = document.querySelector('.hero-video');
+        video.addEventListener('error', function() {
+            const hero = document.querySelector('.hero');
+            hero.style.background = 'linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%)';
+            
+            // Create animated robot icon as fallback
+            const fallback = document.createElement('div');
+            fallback.style.cssText = `
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 10rem;
+                opacity: 0.1;
+                animation: float 6s ease-in-out infinite;
+            `;
+            fallback.textContent = '🤖';
+            hero.appendChild(fallback);
+        });
+
+        // Add float animation
+        const floatStyle = document.createElement('style');
+        floatStyle.textContent = `
+            @keyframes float {
+                0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+                50% { transform: translate(-50%, -50%) translateY(-20px); }
+            }
+        `;
+        document.head.appendChild(floatStyle);
+    </script>
+</body>
+</html>

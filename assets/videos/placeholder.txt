@@ -1,0 +1,16 @@
+Place your rover-demo.mp4 video file in this directory.
+
+Recommended video specifications:
+- Format: MP4 (H.264)
+- Resolution: 1920x1080 (minimum)
+- Duration: 10-15 seconds (looped)
+- File size: Under 10MB (optimize for web)
+- Content: Rover navigating obstacles or terrain
+
+For video optimization, use tools like:
+- HandBrake
+- FFmpeg
+- Online video compressors
+
+Example FFmpeg command:
+ffmpeg -i input.mp4 -c:v libx264 -preset slow -crf 22 -c:a aac -b:a 128k -movflags +faststart rover-demo.mp4

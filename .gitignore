@@ -1,0 +1,21 @@
+# Environment variables
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Large media files (add actual files, keep placeholders)
+assets/videos/*.mp4
+assets/videos/*.webm
+!assets/videos/placeholder.txt
+
+# Backup files
+*.backup
+*.bak
+
+# Compiled files
+*.min.css
+*.min.js

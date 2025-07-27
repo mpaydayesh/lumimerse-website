@@ -1,0 +1,102 @@
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    :root {
+        --space-xl: 80px;
+        --space-xxl: 120px;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Navigation */
+    .nav-links {
+        display: none;
+    }
+    
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+        padding: 8px;
+        margin-right: -8px;
+    }
+    
+    .mobile-menu span {
+        width: 18px;
+        height: 1px;
+        background: var(--dark-gray);
+        transition: all 0.3s ease;
+    }
+    
+    /* Hero */
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.125rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    /* Layout */
+    .two-column {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .two-column.reverse {
+        direction: ltr;
+    }
+    
+    /* Typography */
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    /* Grid Layouts */
+    .feature-grid,
+    .project-cards,
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-links {
+        flex-wrap: wrap;
+        gap: var(--space-md);
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    :root {
+        --space-xl: 60px;
+        --space-lg: 40px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+}

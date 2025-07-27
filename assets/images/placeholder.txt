@@ -1,0 +1,26 @@
+Required images for the website:
+
+1. rover-hero.jpg
+   - Dimensions: 1920x1080
+   - High-quality shot of the rover
+   - Used as video fallback
+
+2. robotic-arm.jpg
+   - Dimensions: 800x600
+   - 6-DOF robotic arm product shot
+   - Clean background preferred
+
+3. drone.jpg
+   - Dimensions: 800x600
+   - Autonomous drone product shot
+   - Action shot or studio photo
+
+4. platform-devices.png
+   - Dimensions: 1200x800
+   - Showcase of supported devices (Pi, Jetson, etc.)
+   - Clean composition with good spacing
+
+Image optimization:
+- Use WebP format for better compression
+- Provide 2x versions for retina displays
+- Keep file sizes under 200KB per image
