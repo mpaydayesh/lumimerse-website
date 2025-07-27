@@ -8,8 +8,8 @@
 .cache/
 
 # Large media files (add actual files, keep placeholders)
-assets/videos/*.mp4
-assets/videos/*.webm
+# assets/videos/*.mp4
+# assets/videos/*.webm
 !assets/videos/placeholder.txt
 
 # Backup files
