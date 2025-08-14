@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - LumiMerse</title>
+    <meta name="description" content="Master AI robotics through hands-on courses designed by industry experts at LumiMerse.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">LumiMerse</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li><a href="index.html#platform">Platform</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section for Courses -->
+    <section class="courses-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Learn with LumiMerse</h1>
+                <p>Master AI robotics through hands-on courses designed by industry experts</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses reveal" id="courses">
+        <div class="container">
+            <div class="course-cards">
+                <div class="course-card featured">
+                    <div class="course-header">
+                        <div class="course-badge">Featured Course</div>
+                        <h3>Deep Learning: GANs and Reinforcement Learning - Hands-On Course</h3>
+                    </div>
+                    <div class="course-description">
+                        <p>This comprehensive hands-on course combines advanced deep learning techniques with practical reinforcement learning applications. Students will master both Generative Adversarial Networks (GANs) and Reinforcement Learning through interactive coding challenges and real-world simulations.</p>
+                        <p>The course provides a holistic understanding of setting up RL environments, training models, visualizing performance, and deploying trained models in interactive environments using industry-standard tools like Gymnasium and Stable Baselines3.</p>
+                    </div>
+                    
+                    <div class="course-content">
+                        <div class="learning-outcomes">
+                            <h4>What Students Will Learn</h4>
+                            <div class="skills-grid">
+                                <div class="skill-category">
+                                    <h5>Core Reinforcement Learning Skills:</h5>
+                                    <ul>
+                                        <li><strong>Fundamental RL Concepts</strong> - Master Q-learning algorithms by implementing them from scratch</li>
+                                        <li><strong>Environment Setup</strong> - Work with Gymnasium environments and configure training pipelines</li>
+                                        <li><strong>Model Training & Comparison</strong> - Train and compare Deep Q-Network (DQN) and Policy Gradient (PPO) agents</li>
+                                        <li><strong>Performance Visualization</strong> - Monitor and analyze model performance using TensorBoard</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="skill-category">
+                                    <h5>Practical Applications:</h5>
+                                    <ul>
+                                        <li>🚀 <strong>Lunar Lander</strong> - Train agents to safely land spacecraft using discrete action spaces</li>
+                                        <li>🏎️ <strong>Car Racing</strong> - Develop autonomous driving agents for procedurally generated racing tracks</li>
+                                        <li>⛰️ <strong>Cliff Walking</strong> - Master navigation challenges in grid-based environments</li>
+                                        <li>🧱 <strong>Custom Environments</strong> - Design and implement custom grid-based navigation environments from scratch</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="skill-category">
+                                    <h5>Advanced Topics:</h5>
+                                    <ul>
+                                        <li>🚀📸 <strong>Stable Diffusion</strong> - Explore cutting-edge diffusion models for image generation</li>
+                                        <li><strong>Algorithm Implementation</strong> - Build Q-learning algorithms manually for deep understanding</li>
+                                        <li><strong>Model Deployment</strong> - Use trained models for real-time environment interaction</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="skill-category">
+                                    <h5>Technical Skills:</h5>
+                                    <ul>
+                                        <li>Proficiency with Stable Baselines3 for RL model training</li>
+                                        <li>Experience with Gymnasium for environment simulation</li>
+                                        <li>TensorBoard integration for performance monitoring</li>
+                                        <li>Custom environment development and testing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="course-format">
+                            <h4>Course Format</h4>
+                            <div class="format-features">
+                                <div class="format-item">
+                                    <div class="format-icon">📓</div>
+                                    <span>Hands-on approach with Jupyter notebook exercises</span>
+                                </div>
+                                <div class="format-item">
+                                    <div class="format-icon">🎯</div>
+                                    <span>6 practical challenges with complete solutions provided</span>
+                                </div>
+                                <div class="format-item">
+                                    <div class="format-icon">🎮</div>
+                                    <span>Interactive simulations for immediate feedback</span>
+                                </div>
+                                <div class="format-item">
+                                    <div class="format-icon">📈</div>
+                                    <span>Progressive difficulty from basic concepts to advanced implementations</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="course-target">
+                            <p><strong>Perfect for:</strong> Students looking to gain practical experience in reinforcement learning and generative AI, with a focus on real-world applications and industry-standard tools.</p>
+                        </div>
+                        
+                        <div class="course-actions">
+                            <a href="index.html#contact" class="btn btn-primary">Enroll Now</a>
+                            <a href="#demo" class="btn btn-secondary">Preview Course</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#projects">Projects</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="index.html#platform">Platform</a>
+                    <a href="index.html#pricing">Pricing</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+                <div class="footer-info">
+                    <p>© 2024 LumiMerse Ltd. All rights reserved.</p>
+                    <p>Built with ❤️ for the future of AI robotics</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    
+    <script>
+        // Reveal animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const spans = mobileMenu.querySelectorAll('span');
+            
+            mobileMenu.classList.toggle('active');
+            
+            if (mobileMenu.classList.contains('active')) {
+                spans[0].style.transform = 'rotate(45deg) translateY(7px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(-45deg) translateY(-7px)';
+                
+                // Create mobile nav
+                const mobileNav = document.createElement('div');
+                mobileNav.className = 'mobile-nav-active';
+                mobileNav.style.cssText = `
+                    position: fixed;
+                    top: 64px;
+                    left: 0;
+                    right: 0;
+                    background: rgba(255, 255, 255, 0.98);
+                    backdrop-filter: blur(20px);
+                    -webkit-backdrop-filter: blur(20px);
+                    padding: var(--space-md);
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                    display: flex;
+                    flex-direction: column;
+                    gap: var(--space-md);
+                    animation: slideDown 0.3s ease;
+                    z-index: 999;
+                `;
+                mobileNav.innerHTML = `
+                    <a href="index.html" onclick="closeMobileMenu()" style="color: var(--dark-gray); text-decoration: none; padding: var(--space-sm) 0; font-weight: var(--font-weight-medium);">Home</a>
+                    <a href="index.html#projects" onclick="closeMobileMenu()" style="color: var(--dark-gray); text-decoration: none; padding: var(--space-sm) 0; font-weight: var(--font-weight-medium);">Projects</a>
+                    <a href="courses.html" onclick="closeMobileMenu()" style="color: var(--dark-gray); text-decoration: none; padding: var(--space-sm) 0; font-weight: var(--font-weight-medium);">Courses</a>
+                    <a href="index.html#platform" onclick="closeMobileMenu()" style="color: var(--dark-gray); text-decoration: none; padding: var(--space-sm) 0; font-weight: var(--font-weight-medium);">Platform</a>
+                    <a href="index.html#pricing" onclick="closeMobileMenu()" style="color: var(--dark-gray); text-decoration: none; padding: var(--space-sm) 0; font-weight: var(--font-weight-medium);">Pricing</a>
+                    <a href="index.html#contact" onclick="closeMobileMenu()" style="color: var(--dark-gray); text-decoration: none; padding: var(--space-sm) 0; font-weight: var(--font-weight-medium);">Contact</a>
+                `;
+                document.querySelector('nav').appendChild(mobileNav);
+            } else {
+                closeMobileMenu();
+            }
+        }
+
+        function closeMobileMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const spans = mobileMenu.querySelectorAll('span');
+            
+            mobileMenu.classList.remove('active');
+            spans[0].style.transform = 'none';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = 'none';
+            
+            const mobileNav = document.querySelector('.mobile-nav-active');
+            if (mobileNav) {
+                mobileNav.remove();
+            }
+        }
+
+        // Add animation for mobile menu
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideDown {
+                from {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Button hover effects
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+
+        // Micro-interaction for cards
+        document.querySelectorAll('.course-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transition = 'transform 0.2s ease';
+                this.style.transform = 'translateY(-5px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
